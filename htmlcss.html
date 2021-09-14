@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="|This site is about a form of telecommunication Company insert-delete-update" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body , html{
+            padding: 0;
+            margin: 0;
+            padding-top: 50px;
+        }
+        html{
+            background-color:#e1e1e1;
+            font-family: "Helvetica" ,  Helvetica, Arial,sans-serif;
+        }
+       a{
+           color: #222;
+       }
+        #main-header{
+            background: whitesmoke;
+            padding: 5px;
+            box-shadow: 0 4px 2px 1px rgba(255, 0, 0, .05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+        }
+        #main-header h1{
+            font-size: 20px;
+            padding: 20px;
+            margin: 0;
+            float: left;
+            margin-right: 20px;
+            padding: 5px;
+        }
+        #main-header nav ul{
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+        #main-header nav ul li{
+            float: left;
+            margin-left: 20px;
+           
+        }
+        .clearfix:after{
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        #main-header nav ul li a{
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+        #main-header nav ul li a:hover {
+            background: cadetblue;
+            border-radius: 7px;
+
+        }
+       
+        #featured-article p{
+          
+            overflow: auto;
+        }
+        #featured-article h2, #featured-article h3 {
+            margin:5px 0;
+
+        }
+        #featured-article figure{
+            float: left;
+            margin: 0;
+            margin-right: 20px;
+        }
+        #featured-article figure img{
+            width: 140px;
+            height: 140px;
+        }
+        .container{
+            width: 960px;
+            margin:0  auto;
+        }
+        .card{
+            background: #b6b0b0;
+            padding: 15px;
+            border-radius: 7px;
+            border: 1px solid #474646;
+            margin-top: 20px;
+        }
+        .pedarbozorg{
+            background: red;
+            padding: 20px;
+            position: relative;
+        }
+        .pedar{
+            background: green;
+            padding: 20px;
+            position: relative;
+        }
+        .farzand{
+            background: blue;
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+        }
+        .post-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        .post-list article{
+            position: relative;
+            padding-left: 200px;
+        }
+        .post-list article footer{
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 200px;
+
+        }
+        .post-list time{
+            color: darkcyan;
+            font-weight: bold;
+            padding-bottom: 10px;
+            display: block;
+        }
+        .post-list li{
+            border-bottom: 1px solid gainsboro;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+        }
+        .post-list li:last-child{
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        #footer-links{
+            margin-top: 40px;
+            background: whitesmoke;
+            border-top: 1px solid gray;
+            border-bottom: 1p solid gray;
+            padding:20px 0;
+        }
+        #footer-links .columns{
+            width: 50%;
+            float: left;
+        }
+        #footer-links ul{
+            padding:0;
+            margin:0;
+            list-style: none;
+        }
+        #footer-links ul li{
+            padding:5px 10px;
+           
+        }
+        #footer-links h3{
+            margin:5px 10px;
+            padding-bottom: 10px;
+            border-bottom:1px solid gray;
+        }
+        #footer-links a {
+            text-decoration: none;
+            color: gray;
+        }
+        .social-link.twitter{
+            background-image: url(download.png);
+            max-width: 10px;
+           
+            background-repeat: no-repeat;
+            background-position:left center;
+            padding-left: 24px;
+        }
+         body > footer{
+            background:grey;
+            padding: 10px 0;
+        }
+        body > footer span{
+
+            float: left;
+            margin-right: 20px;
+
+        }
+        body > footer ul{
+            padding: 0;
+            margin:0;
+            list-style: none;
+
+
+        }
+        body > footer ul li{
+            float: left;
+            margin-right: 10px;
+        }
+        body>footer ul li::after{
+            content: "-";
+        }
+        body>footer ul li:last-child::after{
+            content: "";
+        }
+    </style>
+    
+</head>
+<body>
+    <header id="main-header" class="clearfix">
+        <div class="container">
+        <h1>My Program</h1>
+        <nav>
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="container">
+    <aside id="featured-article" class="clearfix card">
+        <figure>
+            <img src="ttt.jpg" alt="telecom" />
+            
+        </figure>
+        <header>
+            <h2>Features Article</h2>
+            <h3><a href="featured.html">Test Featured</a></h3>
+        </header>
+        <p>
+
+            Course Pages
+            Contacting Your Professor
+            Discussion Forums
+            Submitting Assignment Files 
+            Viewing Feedback Through Turnitin
+            Wikis
+            Tips for Taking Tests
+            Viewing Grades
+            Online Meetings - Zoom
+            Access to Material After the Course Is Complete
+            Access to Material After Graduationis book covers:
+
+          
+
+          </p>
+              
+    </aside>
+
+
+<main class="card">
+    <ol class="post-list">
+        <li>
+            <article>
+                <header>
+                <footer>
+                    <time datetime="2019-02-23T23:00+3:30">June 12,2019-11:00 pm</time>
+                    <address>By <a href="address.html">telecommm</a></address>
+                </footer>
+                <h2><a href="post1.html">post1</a></h2>
+                 </header>
+                 <div>
+                     <p>paragragh1</p>
+                 </div>
+            </article>
+        </li>
+        <li>
+            <article>
+                <header>
+                <footer>
+                    <time datetime="2019-02-23T23:00+3:30">June 12,2019-11:00 pm</time>
+                    <address>By <a href="address.html">telecommm</a></address>
+                </footer>
+                <h2><a href="post1.html">post2</a></h2>
+                 </header>
+                 <div>
+                     <p>paragragh2</p>
+                 </div>
+            </article>
+        </li>
+        <li>
+            <article>
+                <header>
+                <footer>
+                    <time datetime="2019-02-23T23:00+3:30">June 12,2019-11:00 pm</time>
+                    <address>By <a href="address.html">telecommm</a></address>
+                </footer>
+                <h2><a href="post1.html">post3</a></h2>
+                 </header>
+                 <div>
+                     <p>paragragh3</p>
+                 </div>
+                 <details>
+                     <summary>
+                         Click here to see more
+                     </summary>
+                     <p>paraggraph for summary</p>
+                 </details>
+            </article>
+        </li>
+    </ol>
+</main>
+</div>
+<section id="footer-links" class="clearfix">
+    <div class="container">
+    <div class="columns">
+        <h3>Browse</h3>
+        <ul>
+            <li><a href="#">matn1</a></li>
+            <li><a href="#">matn2</a></li>
+            <li><a href="#">matn3</a></li>
+        </ul>
+    </div>
+    <div class="columns">
+
+        <h3>Social</h3>
+        <ul>
+            <li><a class="social-link twitter"  href="https://twitter.com">Twitter</a></li>
+            <li><a  class="social-link Instagram" href="https://Instagram.com">Instagram</a></li>
+            <li><a class="social-link facebook"  href="https://facebook.com">facebook</a></li>
+        </ul>
+    </div>
+</div>
+</section>
+<footer class="clearfix">
+    <div class="container">
+    <span>&copy; Mona</span>
+    <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="Terms.html">Terms of service</a></li>
+        <li><a href="m.raf@gmail.com">Mail Support</a></li>
+    </ul>
+</div>
+</footer>
+</body>
+</html>
